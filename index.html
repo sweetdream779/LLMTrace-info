@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLMTrace</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo/LLMTrace_2.PNG">
+</head>
+<body class="antialiased leading-normal">
+    <div class="container-base">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl text-indigo-700 mt-10">LLMTrace</h1>
+            <p class="text-2xl text-gray-700 mt-2">Introducing LLMTrace: A Corpus for Classification and Fine-Grained Localization of AI-Written Text</p>
+            <div class="mt-8 flex justify-center flex-wrap button-group">
+                <a href="" class="btn btn-secondary">
+                    <img
+                        class="w-5 h-5 mr-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ArXiv_logo_2022.svg"
+                        alt="arXiv logo"
+                        aria-hidden="true"
+                    />
+                    Paper
+                </a>
+                <a href="https://huggingface.co/datasets/iitolstykh/LLMTrace_classification" class="btn btn-secondary">
+                <img
+                    class="w-5 h-5 mr-2"
+                    src="https://huggingface.co/front/assets/huggingface_logo.svg"
+                    alt="Hugging Face logo"
+                    aria-hidden="true"
+                />
+                LLMTrace Classification Dataset
+                </a>
+                <a href="https://huggingface.co/datasets/iitolstykh/LLMTrace_detection" class="btn btn-secondary">
+                <img
+                    class="w-5 h-5 mr-2"
+                    src="https://huggingface.co/front/assets/huggingface_logo.svg"
+                    alt="Hugging Face logo"
+                    aria-hidden="true"
+                />
+                LLMTrace Detection Dataset
+                </a>
+                <a href="https://huggingface.co/iitolstykh/GigaCheck-Classifier-Multi" class="btn btn-secondary">
+                    <img
+                        class="w-5 h-5 mr-2"
+                        src="https://huggingface.co/front/assets/huggingface_logo.svg"
+                        alt="Hugging Face logo"
+                        aria-hidden="true"
+                    />
+                    GigaCheck Classifier Model
+                </a>
+                    <a href="https://huggingface.co/iitolstykh/GigaCheck-Detector-Multi" class="btn btn-secondary">
+                    <img
+                        class="w-5 h-5 mr-2"
+                        src="https://huggingface.co/front/assets/huggingface_logo.svg"
+                        alt="Hugging Face logo"
+                        aria-hidden="true"
+                    />
+                    GigaCheck Detector Model
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-box">
+
+                <p>Welcome to the official page for <strong>LLMTrace<strong>, a large-scale, bilingual (English and Russian) dataset designed to advance the state of the art in AI-generated text detection. Our work addresses the critical need for modern, diverse, and fine-grained data to train robust classifiers and segment-level detectors.</p>
+                <p>This resource is ideal for researchers, developers, and practitioners working on identifying AI-generated content, ensuring academic integrity, and combating misinformation. </p>>
+
+                <p>Key Features:</p>
+                <ol class="list-disc list-inside space-y-2 mt-4 ml-4">
+                    <li><strong>Bilingual:</strong> Parallel corpora for both English and Russian.</li>
+                    <li><strong>Modern & Diverse LLMs:</strong> Includes texts from a wide range of cutting-edge proprietary and open-source models.</li>
+                    <li><strong>Two Critical Tasks:</strong> Supports both standard text classification (Human vs. AI) and novel AI interval detection.</li>
+                    <li><strong>Rich Annotations:</strong> Provides detailed metadata on domains, generation methods, and character-level spans for mixed texts.</li>
+                </ol>
+
+            </section>
+
+            <section class="section-box">
+                <h2 class="text-2xl font-bold mb-6">Resources</h2>
+
+                <!-- Research Paper Section -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-2">📄 Research Paper</h3>
+                    <p>For a detailed description of our dataset creation methodology, statistics, and benchmark experiments, please read our paper.</p>
+                    <p class="mt-2">
+                        <strong>Read the paper on arXiv:</strong>
+                        <a href="#" class="text-gray-500 cursor-not-allowed" title="Coming Soon">Link (coming soon)</a>
+                    </p>
+                </div>
+
+                <!-- Datasets Section -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-2">💾 Datasets</h3>
+                    <p>The dataset is split into two primary components, tailored for classification and detection tasks. Both are available for download.</p>
+
+                    <div class="space-y-6 mt-4">
+                        <!-- Classification Dataset Card -->
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold">Classification Dataset</h4>
+                            <p class="mt-1">Use this for training standard <strong>Human vs. AI</strong> text classifiers.</p>
+                            <a href="https://huggingface.co/datasets/iitolstykh/LLMTrace_classification" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline mt-2 inline-block">
+                                Download from Hugging Face 🤗
+                            </a>
+                        </div>
+
+                        <!-- Detection Dataset Card -->
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold">Detection Dataset</h4>
+                            <p class="mt-1">A versatile dataset for more advanced tasks. Use it for:</p>
+                            <ol class="list-decimal list-inside space-y-1 mt-2 ml-4">
+                                <li>Training models to <strong>localize AI-generated spans</strong> in mixed-authorship texts.</li>
+                                <li>Training <strong>3-way classifiers</strong> to distinguish between <code>human</code>, <code>ai</code>, and <code>mixed</code> texts.</li>
+                            </ol>
+                            <a href="https://huggingface.co/datasets/iitolstykh/LLMTrace_detection" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline mt-2 inline-block">
+                                Download from Hugging Face 🤗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pre-trained Models Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">🤖 Pre-trained Models</h3>
+                    <p>We provide several baseline models trained on <strong>LLMTrace</strong>. These models can be used directly for inference or as a starting point for your own research.</p>
+                    <p class="mt-2">
+                        <strong>Explore and download models on Hugging Face 🤗:</strong>
+                        <a href="#" class="text-gray-500 cursor-not-allowed" title="Coming Soon">Links (coming soon)</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="section-box">
+                <h2 class="text-indigo-600 font-bold">Citation</h2>
+                <p class="mb-4">
+                    If you use our datasets or models in your research, please cite our papers.
+                </p>
+
+                <!-- Publication List -->
+                <div class="space-y-2">
+                    <p>
+                        [1] Tolstykh, I., Tsybina, A., Yakubson, S., & Kuprashevich, M. (2025).
+                        <em>LLMTrace: A Corpus for Classification and Fine-Grained Localization of AI-Written Text</em>.
+                        (Preprint).
+                        <a href="#" class="text-gray-500 cursor-not-allowed ml-2" title="Coming Soon">[Paper (coming soon)]</a>
+                    </p>
+                    <p>
+                        [2] Tolstykh, I., Tsybina, A., Yakubson, S., Gordeev, A., Dokholyan, V., & Kuprashevich, M. (2024).
+                        <em>GigaCheck: Detecting LLM-generated Content</em>.
+                        arXiv preprint arXiv:2410.23728.
+                        <a href="https://arxiv.org/abs/2410.23728" class="text-indigo-600 hover:underline ml-2" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                    </p>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4">BibTeX</h3>
+
+                <!-- LLMTrace BibTeX -->
+                <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto mb-4">
+            <code>@article{Layer2025LLMTrace,
+              title={{LLMTrace: A Corpus for Classification and Fine-Grained Localization of AI-Written Text}},
+              author={Irina Tolstykh and Aleksandra Tsybina and Sergey Yakubson and Maksim Kuprashevich},
+              year={2025},
+              journal={arXiv preprint}
+            }
+            </code></pre>
+
+                <!-- GigaCheck BibTeX -->
+                <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+            <code>@article{tolstykh2024gigacheck,
+              title={{GigaCheck: Detecting LLM-generated Content}},
+              author={Irina Tolstykh and Aleksandra Tsybina and Sergey Yakubson and Aleksandr Gordeev and Vladimir Dokholyan and Maksim Kuprashevich},
+              journal={arXiv preprint arXiv:2410.23728},
+              year={2024},
+              eprint={2410.23728},
+              archivePrefix={arXiv},
+              primaryClass={cs.CL}
+            }
+            </code></pre>
+            </section>
+
+        </main>
+
+        <footer class="text-center text-gray-500 text-sm mt-12 mb-4">
+            <p>&copy; 2025 LLMTrace Project. Built with ❤️ and Tailwind CSS.</p>
+        </footer>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
