@@ -15,7 +15,7 @@
             <h1 class="text-4xl text-indigo-700 mt-10">LLMTrace</h1>
             <p class="text-2xl text-gray-700 mt-2">Introducing LLMTrace: A Corpus for Classification and Fine-Grained Localization of AI-Written Text</p>
             <div class="mt-8 flex justify-center flex-wrap button-group">
-                <a href="" class="btn btn-secondary">
+                <a href="#" class="btn btn-secondary">
                     <img
                         class="w-5 h-5 mr-2"
                         src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ArXiv_logo_2022.svg"
@@ -42,6 +42,8 @@
                 />
                 LLMTrace Detection Dataset
                 </a>
+            </div>
+            <div class="mt-8 flex justify-center flex-wrap button-group">
                 <a href="https://huggingface.co/iitolstykh/GigaCheck-Classifier-Multi" class="btn btn-secondary">
                     <img
                         class="w-5 h-5 mr-2"
@@ -49,7 +51,7 @@
                         alt="Hugging Face logo"
                         aria-hidden="true"
                     />
-                    GigaCheck Classifier Model
+                    GigaCheck Classifier Model (coming soon)
                 </a>
                     <a href="https://huggingface.co/iitolstykh/GigaCheck-Detector-Multi" class="btn btn-secondary">
                     <img
@@ -58,7 +60,7 @@
                         alt="Hugging Face logo"
                         aria-hidden="true"
                     />
-                    GigaCheck Detector Model
+                    GigaCheck Detector Model (coming soon)
                 </a>
             </div>
         </header>
@@ -66,7 +68,12 @@
         <main>
             <section class="section-box">
 
-                <p>Welcome to the official page for <strong>LLMTrace<strong>, a large-scale, bilingual (English and Russian) dataset designed to advance the state of the art in AI-generated text detection. Our work addresses the critical need for modern, diverse, and fine-grained data to train robust classifiers and segment-level detectors.</p>
+                <!-- Logo -->
+                <div class="flex justify-center mb-8">
+                    <img src="images/logo/LLMTrace_1.PNG" alt="LLMTrace Logo" class="max-w-md h-auto rounded-lg">
+                </div>
+
+                <p>Welcome to the official page for <strong>LLMTrace</strong>, a large-scale, bilingual (English and Russian) dataset designed to advance the state of the art in AI-generated text detection. Our work addresses the critical need for modern, diverse, and fine-grained data to train robust classifiers and segment-level detectors.</p>
                 <p>This resource is ideal for researchers, developers, and practitioners working on identifying AI-generated content, ensuring academic integrity, and combating misinformation. </p>>
 
                 <p>Key Features:</p>
@@ -126,10 +133,51 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-2">🤖 Pre-trained Models</h3>
                     <p>We provide several baseline models trained on <strong>LLMTrace</strong>. These models can be used directly for inference or as a starting point for your own research.</p>
-                    <p class="mt-2">
+                    <div class="mt-2">
                         <strong>Explore and download models on Hugging Face 🤗:</strong>
-                        <a href="#" class="text-gray-500 cursor-not-allowed" title="Coming Soon">Links (coming soon)</a>
-                    </p>
+                        <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                            <li>
+                                <a href="https://huggingface.co/iitolstykh/GigaCheck-Classifier-Multi" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                                    GigaCheck-Classifier-Multi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://huggingface.co/iitolstykh/GigaCheck-Detector-Multi" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                                    GigaCheck-Detector-Multi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-box">
+                <h2 class="text-2xl font-bold mb-6">Dataset Statistics</h2>
+
+                <!-- Classification Dataset Statistics -->
+                <div class="mb-10">
+                    <h3 class="text-xl font-semibold mb-2">Classification Dataset</h3>
+                    <p>The dataset contains a substantial number of examples for both languages.</p>
+
+                    <figure class="mt-4 text-center">
+                        <img src="images/statistics/classification_count.PNG" alt="Total Number of Examples in the Classification Dataset" class="mx-auto rounded-lg border">
+                        <figcaption class="mt-2 text-sm text-gray-600">
+                            Total number of samples in the classification dataset, split by language.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Detection Dataset Statistics -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Detection Dataset</h3>
+                    <p>The dataset contains a substantial number of examples for both languages.</p>
+
+                    <figure class="mt-4 text-center">
+                        <img src="images/statistics/detection_count.PNG" alt="Total Number of Examples in the Detection Dataset" class="mx-auto rounded-lg border">
+                        <figcaption class="mt-2 text-sm text-gray-600">
+                            Total number of samples in the detection dataset, split by language.
+                        </figcaption>
+                    </figure>
                 </div>
             </section>
 
